@@ -39,9 +39,9 @@ a {
   text-decoration: none !important;
   transition: all 0.4s ease;
 }
-a:hover {
+/* a:hover {
   color: #ffc200 !important;
-}
+} */
 
 .navbar-brand .uil {
   font-size: 40px;
@@ -321,6 +321,13 @@ b, strong {
   color: #ffffff;
 }
 
+.dark-mode .custom-card {
+  background: #1a1a1a;
+  color: #ffffff;
+  border-color: #ffc200; /* optional — keeps your yellow border visible */
+}
+
+
 
 .timeline-wrapper {
   position: relative;
@@ -589,4 +596,20 @@ b, strong {
     margin: 0 auto; /* center the column */
     float: none;    /* reset float if any */
   }
+}
+
+
+.custom-card {
+  background: #ffffff;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.dark-mode .custom-card:hover {
+  box-shadow: 0 8px 20px rgba(255,255,255,0.1);
 }
